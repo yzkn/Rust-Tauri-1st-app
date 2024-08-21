@@ -55,6 +55,25 @@ $VERSION = Get-ChildItem -Name "$env:LocalAppData\Android\Sdk\ndk"
 rustup target add aarch64-linux-android armv7-linux-androideabi i686-linux-android x86_64-linux-android
 ```
 
+## Mac
+
+- Xcode
+
+- Volta
+  - Terminalを開いて以下のコマンドを実行
+
+```zsh
+brew install volta
+volta install node # Nodeの最新LTS版
+volta install npm
+```
+
+- [Rust](https://www.rust-lang.org/tools/install)
+
+```zsh
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+```
+
 # プロジェクト作成
 
 ```powershell
